@@ -47,7 +47,7 @@ export const CHAINS =
         },
         {
           id: CHAIN_ID_SOLANA,
-          name: "Solana",
+          name: "Solana mainnet s",
           logo: solanaIcon,
         },
         {
@@ -80,7 +80,7 @@ export const CHAINS =
         },
         {
           id: CHAIN_ID_SOLANA,
-          name: "Solana",
+          name: "Solana testnet s",
           logo: solanaIcon,
         },
         {
@@ -102,7 +102,7 @@ export const CHAINS =
         },
         {
           id: CHAIN_ID_SOLANA,
-          name: "Solana",
+          name: "Solana devnet",
           logo: solanaIcon,
         },
         {
