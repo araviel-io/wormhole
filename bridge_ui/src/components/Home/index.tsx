@@ -123,7 +123,7 @@ function Home() {
       <Container maxWidth="md">
         <Card className={classes.mainCard}>
           <Typography variant="h4" className={classes.description}>
-            Wormhole v2 is here!
+            Wormhole v2 is here! araviel
           </Typography>
           <Typography variant="h6" className={classes.description}>
             The Wormhole Token Bridge allows you to seamlessly transfer
