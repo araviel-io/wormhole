@@ -197,6 +197,16 @@ function App() {
                   >
                     Transfer Tokens
                   </Button>
+                  <Button
+                    component={RouterLink}
+                    to="/simpletransfer"
+                    variant="contained"
+                    color="primary"
+                    size="large"
+                    className={clsx(classes.link)}
+                  >
+                    Simple ERC20 to N. Safe
+                  </Button>
                 </>
               ) : (
                 <Tooltip title="View the FAQ">
@@ -285,6 +295,9 @@ function App() {
         ) : null}
         <Switch>
           <Route exact path="/transfer">
+            <Transfer />
+          </Route>
+          <Route exact path="/simpletransfer">
             <Transfer />
           </Route>
           <Route exact path="/nft">

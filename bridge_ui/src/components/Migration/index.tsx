@@ -1,3 +1,6 @@
+// migration is for "migrate" wormhole v1 tokens to v2
+// https://docs.wormholenetwork.com/wormhole/tutorial-token-migration
+
 import {
   Container,
   Divider,

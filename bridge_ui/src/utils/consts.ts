@@ -6,6 +6,7 @@ import {
   CHAIN_ID_POLYGON,
   CHAIN_ID_SOLANA,
   CHAIN_ID_TERRA,
+  CHAIN_ID_SAFECOIN,
 } from "@certusone/wormhole-sdk";
 import { clusterApiUrl } from "@solana/web3.js";
 import { getAddress } from "ethers/lib/utils";
@@ -55,6 +56,11 @@ export const CHAINS =
           name: "Terra",
           logo: terraIcon,
         },
+        {
+          id: CHAIN_ID_SAFECOIN,
+          name: "Safecoin mainnet",
+          logo: terraIcon,
+        },
       ]
     : CLUSTER === "testnet"
     ? [
@@ -88,6 +94,11 @@ export const CHAINS =
           name: "Terra",
           logo: terraIcon,
         },
+        {
+          id: CHAIN_ID_SAFECOIN,
+          name: "Safecoin testnet",
+          logo: terraIcon,
+        },
       ]
     : [
         {
@@ -110,6 +121,11 @@ export const CHAINS =
           name: "Terra",
           logo: terraIcon,
         },
+        {
+          id: CHAIN_ID_SAFECOIN,
+          name: "Safecoin devnet",
+          logo: terraIcon,
+        },
       ];
 export const BETA_CHAINS: ChainId[] = CLUSTER === "mainnet" ? [] : [];
 export const CHAINS_WITH_NFT_SUPPORT = CHAINS.filter(
@@ -118,7 +134,8 @@ export const CHAINS_WITH_NFT_SUPPORT = CHAINS.filter(
     id === CHAIN_ID_ETH ||
     id === CHAIN_ID_ETHEREUM_ROPSTEN ||
     id === CHAIN_ID_POLYGON ||
-    id === CHAIN_ID_SOLANA
+    id === CHAIN_ID_SOLANA ||
+    id === CHAIN_ID_SAFECOIN
 );
 export type ChainsById = { [key in ChainId]: ChainInfo };
 export const CHAINS_BY_ID: ChainsById = CHAINS.reduce((obj, chain) => {
